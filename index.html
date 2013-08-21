@@ -8,7 +8,7 @@
 <link href="reveal-js/css/theme/default.css" rel="stylesheet" media="all" />
 <link href="reveal-js/lib/css/zenburn.css" rel="stylesheet" media="all" />
 <link href="reveal-js/css/print/paper.css" rel="stylesheet" media="print" />
-<link href="theme/grunwell-theme.css" rel="stylesheet" media="all" />
+<link href="bii-theme/bii-theme.css" rel="stylesheet" media="all" />
 </head>
 <body>
   <div class="reveal">
@@ -17,8 +17,7 @@
 
       <section class="title">
         <h1>WordPress Security Basics</h1>
-        <p>Steve Grunwell / <a href="https://twitter.com/stevegrunwell" rel="author">@stevegrunwell</a></p>
-        <p class="slide-link">Play along at home! <a href="http://stevegrunwell.github.io/wordpress-security-basics">stevegrunwell.github.io/wordpress-security-basics</a></p>
+        <p>Steve Grunwell, Developer<br><a href="https://twitter.com/stevegrunwell" rel="author">@stevegrunwell</a></p>
       </section>
 
       <section>
@@ -70,7 +69,7 @@
       </section>
 
       <section class="title">
-        <h2>Keeping WordPress up-to-date</h2>
+        <h2>Keeping WordPress <span class="nobr">up-to-date</span></h2>
       </section>
 
       <section>
@@ -112,7 +111,12 @@
         <section>
           <h4>Somebody told them not to</h4>
           <ul>
-            <li class="fragment">Sometimes agencies manage site updates for you (they'll even test!)</li>
+            <li class="fragment">Sometimes agencies manage site updates for you
+              <ul>
+                <li>Buckeye maintains development and staging environments for client sites and handles regular updates</li>
+                <li>We also keep it all under version control</li>
+              </ul>
+            </li>
             <li class="fragment">If not you, find out who is responsible for updates and make sure they're being applied</li>
           </ul>
         </section>
@@ -226,7 +230,7 @@
 
         <section>
           <h4>Moving wp-content/</h4>
-          <p>WordPress allows you to <a href="http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder" rel="external">move your wp-content/ directory to another location</a></p>
+          <p>WordPress allows you to <a href="http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder" rel="external">move wp-content/ </a> to another location</p>
           <p>Another example of security through obscurity</p>
         </section>
 
@@ -248,6 +252,10 @@
       </section>
 
     </div><!-- .slides -->
+
+    <footer id="global-footer">
+      <a href="http://www.buckeyeinteractive.com/"><img src="bii-theme/logo.png" alt="Presented by Buckeye Interactive" /></a>
+    </footer>
   </div><!-- .reveal -->
 
 <script src="reveal-js/lib/js/head.min.js"></script>
